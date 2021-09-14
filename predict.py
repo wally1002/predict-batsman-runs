@@ -5,8 +5,7 @@ import pandas as pd
 import pickle
 
 def load_model():
-    with open('pipeline.pkl','rb') as file:
-        data = pickle.load(file)
+    data = pickle.load(open('pipeline.pkl', 'rb'))
     return data
 
 data = load_model()
